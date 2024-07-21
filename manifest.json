@@ -1,0 +1,16 @@
+{
+	"manifest_version": 3,
+	"name": "Slack Pushover",
+	"version": "1.0.0",
+	"description": "Forward notifications from a person to pushover.",
+	"content_scripts": [
+		{
+			"matches": [
+				"https://app.slack.com/*"
+			],
+			"js": [
+				"content.js"
+			]
+		}
+	]
+}
